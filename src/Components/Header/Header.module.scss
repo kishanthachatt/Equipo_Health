@@ -6,20 +6,40 @@
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
-  width: 100%;
+  padding: 0px 16px;
   .searchWrap {
-  }
-  .logowrap {
     display: flex;
-    .options {
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .button {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 35px;
-      height: 35px;
-      background-color: $seconday-colour-lite;
-      border-radius: 50%;
+      gap: 6px;
+      background-color: $primary-colour;
     }
+  }
+  .logowrap {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    .optionsWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background-color: $seconday-colour-lite;
+        border-radius: 50%;
+      }
+    }
+
     .companyLogo {
       width: 150px;
       height: 38px;
