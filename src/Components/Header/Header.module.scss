@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+.headerWrapper {
+  background-color: $seconday-colour;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  width: 100%;
+  .searchWrap {
+  }
+  .logowrap {
+    display: flex;
+    .options {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      background-color: $seconday-colour-lite;
+      border-radius: 50%;
+    }
+    .companyLogo {
+      width: 150px;
+      height: 38px;
+    }
+  }
+}
