@@ -6,13 +6,16 @@ import PageBody from "../../Components/PageBody";
 import PageContent from "../../Components/PageContent";
 // import BottomNavBar from "../../Components/BottomNavBar";
 // import { Mobile } from "../../Components/Mobile";
-// import SideBar from "../../Components/SideBar";
+import SideBar from "../../Components/SideBar";
 
 import { useMediaType } from "../../MediaType.provider";
 
 // import { BOTTOM_NAV_ARRAY, NOTIFICATION_NAV } from "../../Routes.constants";
 import { VIEW_TYPE } from "../../Utils/constants";
 import Header from "../Header";
+import Wrapper from "../Wrapper";
+
+import cn from "./Layout.module.scss";
 
 export default function Layout() {
   const [collapse, setCollapse] = useState(true);
@@ -34,15 +37,17 @@ export default function Layout() {
   return (
     <PageWrapper>
       <Header />
-      {/* <SideBar collapse={collapse} changeCollapse={changeCollapse} /> */}
-      <PageBody collapse={collapse}>
-        <PageContent>
-          <Outlet />
-        </PageContent>
-        {/* <Mobile>
+      <Wrapper className={cn.contentWrapper}>
+        <SideBar collapse={collapse} changeCollapse={changeCollapse} />
+        <PageBody collapse={collapse}>
+          <PageContent>
+            <Outlet />
+          </PageContent>
+          {/* <Mobile>
           <BottomNavBar tabData={tabList} />
         </Mobile> */}
-      </PageBody>
+        </PageBody>
+      </Wrapper>
     </PageWrapper>
   );
 }

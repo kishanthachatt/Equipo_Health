@@ -29,7 +29,10 @@ export function App() {
           {/* <Route path={ROUTE.SPLASH_SCREEN} element={<SplashScreen />} /> */}
           {/* <Route path={ROUTE.OAUTH_LOGIN} element={<RCLogin />} /> */}
           <Route element={<Layout />}>
+            <Route path={"/"} element={<PatientDetail />} />
             <Route path={ROUTE.PATIENT_DETAILS} element={<PatientDetail />} />
+            <Route path={ROUTE.SERVICE} element={<PatientDetail />} />
+            <Route path={ROUTE.TASKS} element={<PatientDetail />} />
           </Route>
         </Routes>
         {/* </Suspense> */}

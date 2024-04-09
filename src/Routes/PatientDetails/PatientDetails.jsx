@@ -1,4 +1,9 @@
 import React from "react";
+import PatientCard from "./PatientCard";
 export default function PatientDetail() {
-  return <h1>TESTING</h1>;
+  return (
+    <div>
+      <PatientCard />
+    </div>
+  );
 }

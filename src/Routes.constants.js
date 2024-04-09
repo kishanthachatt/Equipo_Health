@@ -1,6 +1,8 @@
 export const ROUTE = {
   LOGIN: "/login",
   PATIENT_DETAILS: "/patient",
+  SERVICE: "/service",
+  TASKS: "tasks",
 };
 
 export const BOTTOM_NAV_ARRAY = [
