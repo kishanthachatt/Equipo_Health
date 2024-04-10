@@ -1,0 +1,26 @@
+@import "../../../../../index.scss";
+.detailsWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-gap: 18px;
+  .detailItem {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    > span {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .detailsWrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    grid-gap: 8px;
+  }
+}

@@ -36,7 +36,7 @@ export default function Layout() {
 
   return (
     <PageWrapper>
-      <Header />
+      {/* <Header /> */}
       <Wrapper className={cn.contentWrapper}>
         <SideBar collapse={collapse} changeCollapse={changeCollapse} />
         <PageBody collapse={collapse}>

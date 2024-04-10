@@ -1,16 +1,18 @@
 @import "../../index.scss";
+
 .imageUpload {
   position: relative;
   cursor: pointer;
   width: fit-content;
+  height: fit-content;
   .imageWrap {
     width: max-content;
     background-color: $primary-colour-lite;
     border-radius: 50%;
     border: 1px solid $primary-colour;
     > img {
-      width: 150px;
-      height: 150px;
+      width: 125px;
+      height: 125px;
       border-radius: 50%;
     }
   }

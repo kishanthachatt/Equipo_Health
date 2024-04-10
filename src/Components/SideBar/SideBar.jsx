@@ -36,6 +36,7 @@ export default function Sidebars() {
       handleCollapsedChange={handleCollapsedChange}
       backgroundColor="#5d5c61"
       transitionDuration={1000}
+      breakPoint={"sm"}
     >
       <Menu>
         <MenuItem>

@@ -1,6 +1,6 @@
 .pageBody {
   flex: 1 1 auto;
-  padding-bottom: 60px;
+  padding: 40px;
   max-width: 100%;
   min-height: 100vh;
   transform-origin: top right;
@@ -17,19 +17,25 @@
 
   @media (min-width: 1400px) {
     padding-bottom: 0;
-    max-width: calc(100% - 230px);
+    max-width: calc(100vw - 250px);
     min-height: 100vh;
   }
 
   @media (min-width: 1921px) {
     padding-bottom: 0;
-    max-width: calc(100% - 230px);
+    max-width: calc(100vw - 250px);
     min-height: 100vh;
   }
 
   &.collapse {
     @media (min-width: 1921px) {
-      max-width: calc(100% - 60px);
+      max-width: calc(100vw - 80px);
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pageBody {
+    padding: 20px;
   }
 }
