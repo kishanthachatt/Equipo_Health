@@ -5,6 +5,7 @@ import cn from "./PatientCard.module.scss";
 import Card from "../../../Components/Card";
 import Analytics from "./Analytics";
 import Wrapper from "../../../Components/Wrapper";
+import Screening from "./Screenings";
 export default function PatientCard() {
   return (
     <Card className={cn.patientCard}>
@@ -14,6 +15,7 @@ export default function PatientCard() {
       </Wrapper>
       <Wrapper className={cn.lowerPart}>
         <Analytics />
+        <Screening />
       </Wrapper>
     </Card>
   );

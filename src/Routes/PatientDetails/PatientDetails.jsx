@@ -1,10 +1,14 @@
 import React from "react";
 import PatientCard from "./PatientCard";
-import PersonalDetails from "./PatientCard/PersonalDetails";
+import ActivityArea from "./ActivityArea";
+
+import cn from "./PatientDetail.module.scss";
+
 export default function PatientDetail() {
   return (
-    <div>
+    <div className={cn.patientDetail}>
       <PatientCard />
+      <ActivityArea />
     </div>
   );
 }

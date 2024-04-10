@@ -1,6 +1,4 @@
 .patientCard {
-  width: 80%;
-
   .upperPart {
     display: flex;
     align-items: center;
@@ -11,13 +9,11 @@
   .lowerPart {
     display: grid;
     grid-template-columns: 1.75fr 1.25fr;
+    gap: 18px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .patientCard {
-    width: calc(100% - 20px);
-  }
   .upperPart {
     display: flex;
     flex-direction: column;

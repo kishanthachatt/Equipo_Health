@@ -1,0 +1,10 @@
+.patientDetail {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .patientDetail {
+    grid-template-columns: 100%;
+  }
+}
