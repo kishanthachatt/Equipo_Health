@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "antd";
-import { faSearch, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faPlus, faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CompanyLogo from "../../Assets/Images/companyLogo.png";
 import Image from "../Image";
@@ -13,9 +13,16 @@ import Profile from "./Profile";
 
 import cn from "./Header.module.scss";
 
-export default function Header() {
+export default function Header(props) {
   return (
     <div className={cn.headerWrapper}>
+      <div className={cn.menu} onClick={props.changeToggle}>
+        <FontAwesomeIcon
+          icon={faBars}
+          style={{ width: "35px", height: "35px" }}
+          color="black"
+        />
+      </div>
       <div className={cn.searchWrap}>
         <SearchBar />
         <Button type="primary" className={cn.button}>

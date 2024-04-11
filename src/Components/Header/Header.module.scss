@@ -5,14 +5,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   height: 50px;
   padding: 0px 16px;
+  .menu {
+    display: none;
+  }
   .searchWrap {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    width: 50%;
     .button {
       display: flex;
       justify-content: center;
@@ -44,6 +47,41 @@
     .companyLogo {
       width: 150px;
       height: 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerWrapper {
+    gap: 8px;
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+    .searchWrap {
+      display: none;
+    }
+    .logowrap {
+      width: 100%;
+      justify-content: space-between;
+      .optionsWrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .headerWrapper {
+    gap: 16px;
+    .searchWrap {
+      > button {
+        display: none !important;
+      }
+    }
+    .logowrap {
+      width: 100%;
+      justify-content: space-between;
     }
   }
 }

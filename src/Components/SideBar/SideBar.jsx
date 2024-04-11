@@ -32,10 +32,12 @@ export default function Sidebars(props) {
   return (
     <Sidebar
       collapsed={props.collapse}
+      toggled={props.toggle}
       handleCollapsedChange={handleCollapsedChange}
       backgroundColor="#5d5c61"
       transitionDuration={1000}
       breakPoint={"md"}
+      onBackdropClick={props.changeToggle}
     >
       <Menu>
         <MenuItem>
