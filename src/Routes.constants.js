@@ -2,17 +2,9 @@ export const ROUTE = {
   LOGIN: "/login",
   PATIENT_DETAILS: "/patient",
   SERVICE: "/service",
-  TASKS: "tasks",
+  TASKS: "/tasks",
+  HOSPITAL_USER: "/hospital-user",
+  DOCTORS: "/doctors",
+  NURSE: "/nurse",
+  SERVER: "/server",
 };
-
-export const BOTTOM_NAV_ARRAY = [
-  /**
-   * if re-indexing needed, please check
-   * the usages of BOTTOM_NAV_ARRAY for RBAC(entire code)
-   */
-  {
-    name: "Patient",
-    path: ROUTE.PATIENT_DETAILS,
-    icon: "SVG-patient",
-  },
-];

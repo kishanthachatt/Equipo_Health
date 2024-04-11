@@ -6,10 +6,13 @@ import { useNavigate } from "react-router-dom";
 import {
   faCircleRight,
   faCircleLeft,
-  faLeftLong,
   faPerson,
   faTruckMedical,
   faListCheck,
+  faHospitalUser,
+  faStethoscope,
+  faHouseMedical,
+  faServer,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "./SideBar.scss";
@@ -49,7 +52,7 @@ export default function Sidebars(props) {
             )}
           </div>
         </MenuItem>
-        {/* <hr /> */}
+        <hr />
       </Menu>
       <Menu
         menuItemStyles={{
@@ -68,6 +71,15 @@ export default function Sidebars(props) {
         >
           Patient
         </MenuItem>
+
+        <MenuItem
+          icon={<FontAwesomeIcon icon={faListCheck} />}
+          onClick={() => handleMenuItemClick(ROUTE.TASKS)}
+          active={selected === ROUTE.TASKS}
+        >
+          Tasks
+        </MenuItem>
+        <hr />
         <MenuItem
           icon={<FontAwesomeIcon icon={faTruckMedical} />}
           onClick={() => handleMenuItemClick(ROUTE.SERVICE)}
@@ -76,11 +88,33 @@ export default function Sidebars(props) {
           Service
         </MenuItem>
         <MenuItem
-          icon={<FontAwesomeIcon icon={faListCheck} />}
-          onClick={() => handleMenuItemClick(ROUTE.TASKS)}
-          active={selected === ROUTE.TASKS}
+          icon={<FontAwesomeIcon icon={faHospitalUser} />}
+          onClick={() => handleMenuItemClick(ROUTE.HOSPITAL_USER)}
+          active={selected === ROUTE.HOSPITAL_USER}
         >
-          Tasks
+          Users
+        </MenuItem>
+        <MenuItem
+          icon={<FontAwesomeIcon icon={faStethoscope} />}
+          onClick={() => handleMenuItemClick(ROUTE.DOCTORS)}
+          active={selected === ROUTE.DOCTORS}
+        >
+          Doctors
+        </MenuItem>
+        <MenuItem
+          icon={<FontAwesomeIcon icon={faHouseMedical} />}
+          onClick={() => handleMenuItemClick(ROUTE.NURSE)}
+          active={selected === ROUTE.NURSE}
+        >
+          Nurses
+        </MenuItem>
+        <hr />
+        <MenuItem
+          icon={<FontAwesomeIcon icon={faServer} />}
+          onClick={() => handleMenuItemClick(ROUTE.SERVER)}
+          active={selected === ROUTE.SERVER}
+        >
+          Server
         </MenuItem>
       </Menu>
     </Sidebar>

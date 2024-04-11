@@ -27,6 +27,22 @@ export function App() {
               path={ROUTE.TASKS}
               element={<PageComingSoon title={"Tasks"} />}
             />
+            <Route
+              path={ROUTE.DOCTORS}
+              element={<PageComingSoon title={"Doctors"} />}
+            />
+            <Route
+              path={ROUTE.HOSPITAL_USER}
+              element={<PageComingSoon title={"Users"} />}
+            />
+            <Route
+              path={ROUTE.NURSE}
+              element={<PageComingSoon title={"Nurse"} />}
+            />
+            <Route
+              path={ROUTE.SERVER}
+              element={<PageComingSoon title={"Server"} />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>
