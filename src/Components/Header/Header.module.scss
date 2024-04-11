@@ -1,0 +1,87 @@
+@import "../../index.scss";
+
+.headerWrapper {
+  background-color: $seconday-colour;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0px 16px;
+  .menu {
+    display: none;
+  }
+  .searchWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      background-color: $primary-colour;
+    }
+  }
+  .logowrap {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    .optionsWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background-color: $seconday-colour-lite;
+        border-radius: 50%;
+      }
+    }
+
+    .companyLogo {
+      width: 150px;
+      height: 38px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .headerWrapper {
+    gap: 8px;
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+    .searchWrap {
+      display: none;
+    }
+    .logowrap {
+      width: 100%;
+      justify-content: space-between;
+      .optionsWrapper {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .headerWrapper {
+    gap: 16px;
+    .searchWrap {
+      > button {
+        display: none !important;
+      }
+    }
+    .logowrap {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}

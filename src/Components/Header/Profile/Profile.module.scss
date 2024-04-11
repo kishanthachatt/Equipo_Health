@@ -1,0 +1,17 @@
+@import "../../../index.scss";
+.profileWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  .profileImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid $seconday-colour-lite;
+    background-color: $primary-colour;
+  }
+}

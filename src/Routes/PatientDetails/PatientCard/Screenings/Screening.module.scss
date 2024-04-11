@@ -1,0 +1,25 @@
+@import "../../../../index.scss";
+
+.screening {
+  border: 1px solid $primary-colour;
+  border-radius: 5px;
+  padding: 8px;
+  .title {
+    margin: 0;
+    color: $seconday-colour;
+    font-size: 16px;
+  }
+  .list {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style-type: circle;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .list {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}

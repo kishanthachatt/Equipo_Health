@@ -1,0 +1,25 @@
+@import "./Styles/colours.module";
+@import "./Styles/font.module";
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title;
+}
+
+p,
+div,
+* {
+  font-family: $body;
+}
+
+.slick-active > button {
+  background-color: #557495 !important;
+}

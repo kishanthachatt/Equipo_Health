@@ -1,0 +1,48 @@
+@import "../../../../../index.scss";
+.header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-bottom: 12px;
+  .name {
+    font-size: 24px;
+    color: $seconday-colour;
+    font-weight: 600;
+    margin: 0;
+  }
+  .actions {
+    display: flex;
+    gap: 12px;
+  }
+  .editButton {
+    background-color: #ff5733;
+    border-color: #ff5733;
+  }
+
+  .editButton:hover {
+    background-color: $seconday-colour;
+    border-color: #ff8c69;
+  }
+
+  .addButton {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: $seconday-colour;
+    border-color: $seconday-colour;
+  }
+
+  .addButton:hover {
+    background-color: $seconday-colour;
+    border-color: #ff8c69;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+}

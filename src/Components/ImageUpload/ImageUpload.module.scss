@@ -1,0 +1,39 @@
+@import "../../index.scss";
+
+.imageUpload {
+  position: relative;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  .imageWrap {
+    width: max-content;
+    background-color: $primary-colour-lite;
+    border-radius: 50%;
+    border: 1px solid $primary-colour;
+    > img {
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+    }
+  }
+  .uploadIcon {
+    background-color: $seconday-colour;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid $primary-colour;
+  }
+  .inputImage {
+    position: absolute;
+  }
+  input {
+    display: none;
+  }
+}

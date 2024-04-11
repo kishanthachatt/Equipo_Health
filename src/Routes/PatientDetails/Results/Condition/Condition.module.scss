@@ -1,0 +1,33 @@
+@import "../../../../index.scss";
+.wraper {
+  border-top: 10px solid #bca002 !important;
+  border: 2px solid #bca002;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .title {
+      font-size: 14px;
+    }
+    .value {
+      font-size: 14px;
+    }
+  }
+  .lab {
+    .title {
+      font-size: 14px;
+    }
+    .data {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 4px;
+      border: 2px solid $primary-colour;
+      font-size: 14px;
+    }
+  }
+}

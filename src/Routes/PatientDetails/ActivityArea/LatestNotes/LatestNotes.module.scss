@@ -1,0 +1,42 @@
+@import "../../../../index.scss";
+.latestNotes {
+  height: 100%;
+  border: 1px solid $seconday-colour;
+  border-radius: 5px 5px 0 0;
+  .header {
+    display: flex;
+    gap: 8px;
+    background-color: $seconday-colour;
+    padding: 4px;
+    border-radius: 5px 5px 0 0;
+    .suitcase {
+      width: min-content;
+    }
+    .title {
+      display: flex;
+      width: 100%;
+      color: #ffffff;
+    }
+    .plus {
+      width: min-content;
+    }
+  }
+  .detail {
+    padding: 8px;
+    font-size: 14px;
+    .carousalContent {
+      color: black;
+    }
+    .dots {
+      bottom: 4px;
+      > li {
+        width: 24px;
+        height: 3px;
+        background-color: $seconday-colour;
+      }
+      .slick-active > button {
+        background-color: $seconday-colour;
+      }
+    }
+  }
+}

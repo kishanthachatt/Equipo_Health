@@ -1,0 +1,38 @@
+@import "../../../../index.scss";
+.wraper {
+  border-top: 10px solid $seconday-colour !important;
+  border: 2px solid $seconday-colour;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .title {
+      font-size: 14px;
+    }
+    .value {
+      font-size: 14px;
+    }
+  }
+  .itemRow {
+    display: flex;
+    gap: 8px;
+    .title {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+    }
+    .value {
+      font-size: 14px;
+    }
+  }
+  .redemsions {
+    display: flex;
+    gap: 8px;
+    color: red;
+  }
+}

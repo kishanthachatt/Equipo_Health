@@ -1,0 +1,27 @@
+.patientDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  .personal {
+    display: grid;
+    grid-template-columns: 80% 19%;
+    grid-column-gap: 12px;
+    grid-gap: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .patientDetail {
+    .personal {
+      grid-template-columns: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .patientDetail {
+    .personal {
+      grid-template-columns: 100%;
+    }
+  }
+}
