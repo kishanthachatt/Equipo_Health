@@ -39,7 +39,7 @@ export default function Sidebars(props) {
       breakPoint={"md"}
       onBackdropClick={props.changeToggle}
     >
-      <Menu>
+      <Menu closeOnClick>
         <MenuItem>
           <div className="closemenu" onClick={handleCollapsedChange}>
             {props.collapse ? (
