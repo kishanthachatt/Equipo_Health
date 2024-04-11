@@ -1,0 +1,21 @@
+@import "../../../../index.scss";
+.wraper {
+  border-top: 10px solid #549572 !important;
+  border: 2px solid #549572;
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .title {
+      font-size: 12px;
+    }
+    .value {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,8 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import cn from './PageBody.module.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import cn from "./PageBody.module.scss";
 export default function PageBody(props) {
-  const className = `${cn.pageBody} ${cn[props.collapse ? 'collapse' : '']}`;
+  const className = `${cn.pageBody} ${props.collapse ? `${cn.collapse}` : ""}`;
+
   return <div className={className}>{props.children}</div>;
 }
 

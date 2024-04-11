@@ -22,16 +22,9 @@ export default function Layout() {
 
   const isMobile = VIEW_TYPE.MOB === useMediaType();
 
-  //   const tabList = useMemo(() => {
-  //     let tabList = [...BOTTOM_NAV_ARRAY];
-  //     if (isMobile) {
-  //       tabList = tabList.filter((item) => item.name !== "Trackers");
-  //     }
-  //     return tabList;
-  //   }, [isMobile, permissions]);
-
-  const changeCollapse = () => {
-    setCollapse(collapse ? false : true);
+  const changeCollapse = (collapsed) => {
+    debugger;
+    setCollapse(collapsed);
   };
 
   return (
@@ -43,9 +36,6 @@ export default function Layout() {
           <PageContent>
             <Outlet />
           </PageContent>
-          {/* <Mobile>
-          <BottomNavBar tabData={tabList} />
-        </Mobile> */}
         </PageBody>
       </Wrapper>
     </PageWrapper>

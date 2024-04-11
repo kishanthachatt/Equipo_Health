@@ -15,10 +15,9 @@ import {
 import "./SideBar.scss";
 import { ROUTE } from "../../Routes.constants";
 
-export default function Sidebars() {
+export default function Sidebars(props) {
   const navigate = useNavigate();
 
-  const [collapsed, setCollapsed] = useState(false);
   const [selected, setSelected] = useState(ROUTE.PATIENT_DETAILS);
 
   const handleMenuItemClick = (route) => {
@@ -27,12 +26,12 @@ export default function Sidebars() {
   };
 
   const handleCollapsedChange = () => {
-    setCollapsed(!collapsed);
+    props.changeCollapse(!props.collapse);
   };
 
   return (
     <Sidebar
-      collapsed={collapsed}
+      collapsed={props.collapse}
       handleCollapsedChange={handleCollapsedChange}
       backgroundColor="#5d5c61"
       transitionDuration={1000}
@@ -41,7 +40,7 @@ export default function Sidebars() {
       <Menu>
         <MenuItem>
           <div className="closemenu" onClick={handleCollapsedChange}>
-            {collapsed ? (
+            {props.collapse ? (
               <FontAwesomeIcon icon={faCircleRight} />
             ) : (
               <FontAwesomeIcon icon={faCircleLeft} />
