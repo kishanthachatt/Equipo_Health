@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import { ROUTE } from "./Routes.constants";
 
@@ -10,7 +10,7 @@ import PageComingSoon from "./Routes/PageComingSoon/PageComingSoon.jsx";
 
 export function App() {
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route path={"*"} element={<PageNotFound />} />
         <Route element={<Layout />}>
@@ -42,6 +42,6 @@ export function App() {
           />
         </Route>
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
