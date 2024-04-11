@@ -19,3 +19,7 @@ div,
 * {
   font-family: $body;
 }
+
+.slick-active > button {
+  background-color: #557495 !important;
+}

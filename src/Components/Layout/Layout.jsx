@@ -23,7 +23,6 @@ export default function Layout() {
   const isMobile = VIEW_TYPE.MOB === useMediaType();
 
   const changeCollapse = (collapsed) => {
-    debugger;
     setCollapse(collapsed);
   };
 

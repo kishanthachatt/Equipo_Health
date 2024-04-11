@@ -27,5 +27,16 @@
     .carousalContent {
       color: black;
     }
+    .dots {
+      bottom: 4px;
+      > li {
+        width: 24px;
+        height: 3px;
+        background-color: $seconday-colour;
+      }
+      .slick-active > button {
+        background-color: $seconday-colour;
+      }
+    }
   }
 }
